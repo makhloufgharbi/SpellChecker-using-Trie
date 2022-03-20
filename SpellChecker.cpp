@@ -128,7 +128,6 @@ string inOrder(struct Trie * root, string key) {
 }
 
 int main() {
-
   vector < string > Dictonary;
   vector < string > InputFIle;
   string word;
@@ -159,7 +158,6 @@ int main() {
     InputFIle.push_back(word);
   }
 
-  // Initialize a Trie
   Trie * root = new Trie();
 
   // Insert strings to trie
@@ -168,7 +166,6 @@ int main() {
   }
 
   cout << "Starting Analysis of input file..." << endl;
-
   auto start = std::chrono::system_clock::now();
 
   for (auto w = InputFIle.begin(); w != InputFIle.end(); w++) {
@@ -183,17 +180,3 @@ int main() {
 
   return 0;
 }
-
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
